@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- Critical 이미지만 preload -->
+    <link rel="preload" href="/assets/images/background.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/images/star_character.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/images/title.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/images/start_button.png" as="image" type="image/png" />
+    
+    <!-- 폰트 preload (Weight 900 추가) -->
+    <link rel="preload" href="/assets/fonts/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/Pretendard-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/assets/fonts/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/Pretendard-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/assets/fonts/Pretendard-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/Pretendard-Black.woff" as="font" type="font/woff" crossorigin>
+    
+    <!-- Performance 최적화 -->
+    <link rel="dns-prefetch" href="//vercel.app" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Cache Control -->
+    <meta httpEquiv="Cache-Control" content="public, max-age=3600" />
+    <meta httpEquiv="Pragma" content="cache" />
+    
+    <link rel="icon" type="image/svg+xml" href="/starstar_favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content" />    
+    <title>별 따라 안전운전!</title>
+    
+    <!-- Critical CSS inlined -->
+    <style>
+      /* 폰트 fallback 최적화 */
+      html, body, * {
+        font-family: 'Pretendard', 
+                     system-ui, 
+                     -apple-system, 
+                     BlinkMacSystemFont, 
+                     'Apple SD Gothic Neo', 
+                     'Malgun Gothic', 
+                     '맑은 고딕', 
+                     sans-serif !important;
+        font-display: fallback;
+      }
+      
+      /* 이미지 로딩 최적화 */
+      img {
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+      }
+      
+      /* 초기 로딩 스타일 */
+      .loading-screen {
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(to bottom, #FFF9C4, #F0E68C);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      /* 애니메이션 최적화 */
+      .animate-bounce {
+        animation: bounce 1s infinite;
+      }
+      
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(-25%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform: none;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+      
+      /* 모바일 폰트 최적화 */
+      @media (max-width: 768px) {
+        * {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/js/index-oHOU8saJ.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/js/audio-vendor-CiVAe4KV.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/vendor-AYjf9MJ1.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/react-vendor-CK-HCiH-.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/utils-AomqRD1u.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/motion-vendor-CnQVYRIF.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/quest-pages-EDRh107R.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/result-pages-pHqkuEfW.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DexZKmU-.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
