@@ -1,0 +1,162 @@
+/* src/performance.css - 성능 최적화 전용 스타일 */
+
+/* GPU 가속 및 애니메이션 최적화 */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* 이미지 로딩 최적화 */
+img {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 1px;
+}
+
+/* 스켈레톤 애니메이션 */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* 플로팅 애니메이션 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 부드러운 페이드 인/아웃 */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
+
+/* 레이아웃 시프트 방지 */
+.aspect-ratio-container {
+  contain: layout style;
+}
+
+/* 스크롤 성능 최적화 */
+.scroll-optimized {
+  overflow-anchor: none;
+  overscroll-behavior: contain;
+}
+
+/* 터치 최적화 */
+.touch-optimized {
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* 이미지 우선순위 클래스 (CSS용) */
+.critical-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.high-priority-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.lazy-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* 성능 모니터링용 */
+.performance-marker::before {
+  content: attr(data-performance-id);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  color: rgba(255, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* 메모리 최적화 */
+.memory-optimized {
+  will-change: auto;
+}
+
+.memory-optimized:hover {
+  will-change: transform;
+}
+
+/* 스크롤 전파 방지 전용 스타일 */
+.scroll-isolation {
+  overscroll-behavior: contain;
+  touch-action: manipulation;
+  overflow: hidden;
+}
+
+/* 게임 내부 스크롤 허용 영역 */
+.internal-scroll {
+  overscroll-behavior: auto;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 모바일 브라우저 스크롤 방지 */
+@supports (-webkit-touch-callout: none) {
+  .game-container {
+    -webkit-overflow-scrolling: auto;
+    overscroll-behavior-y: contain;
+    overscroll-behavior-x: contain;
+  }
+}
+
+/* Vercel 환경 전용 최적화 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 크리티컬 리소스 우선순위 */
+.resource-critical {
+  content-visibility: visible;
+  contain: none;
+}
+
+.resource-non-critical {
+  content-visibility: auto;
+  contain: layout style paint;
+}

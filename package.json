@@ -1,0 +1,53 @@
+{
+  "name": "front",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:check": "tsc --noEmit && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "optimize-images": "node scripts/optimize-images.js",
+    "update-images": "node scripts/update-images.js",
+    "analyze-bundle": "npm run build && npx vite-bundle-analyzer dist",
+    "type-check": "tsc --noEmit",
+    "vercel-build": "npm run build"
+  },
+  "dependencies": {
+    "@use-gesture/react": "^10.3.1",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.9.0",
+    "firebase": "^11.8.1",
+    "framer-motion": "^12.11.3",
+    "gsap": "^3.11.5",
+    "howler": "^2.2.4",
+    "phaser": "^3.60.0",
+    "postcss": "^8.5.3",
+    "react": "^19.0.0",
+    "react-confetti": "^6.4.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.6.0",
+    "react-use": "^17.6.0",
+    "tailwindcss": "^3.2.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/howler": "^2.2.12",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "sharp": "^0.34.2",
+    "terser": "^5.41.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0",
+    "vite-bundle-analyzer": "^0.22.0"
+  }
+}
