@@ -2,8 +2,8 @@
 > 고령 이륜차 운전자를 위한 안전 교육 게임
 
 
-<img src="../img/logo.png" width="300px" height="150px" title="Team Logo" alt="Logo"></img><br/>
-<img src="../img/main_character.png" width="250px" height="250px" title="Team Logo" alt="Logo"></img><br/>
+<img src="/img/logo.png" width="300px" height="150px" title="Team Logo" alt="Logo"></img><br/>
+<img src="/img/main_character.png" width="250px" height="250px" title="Team Logo" alt="Logo"></img><br/>
 
 ##  프로젝트 개요
 
