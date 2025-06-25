@@ -146,7 +146,7 @@ Moving away from traditional boring lecture-style education, we provide **fun an
 - **Environment**: Tablet use under 1:1 guidance from educator
 
 ## Game URL
-[Play Our Game!](https://follow-star-safe-driving.vercel.app/)
+[Play Our Game!](https://follow-star-safe-driving.vercel.app/) <br>
 <img src="/img/game_QR.jpg" width="50px" height="50px" title="Game site QR" alt="Game site QR"></img><br/>
 
 ## Demo Video
