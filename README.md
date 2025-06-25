@@ -52,7 +52,6 @@ Vite 4.4.5
 Firebase 9.23.0
 Firestore Database
 Firebase Hosting
-Firebase Authentication (익명 인증)
 ```
 
 ### 버전 관리
@@ -182,7 +181,6 @@ Vite 4.4.5
 Firebase 9.23.0
 Firestore Database
 Firebase Hosting
-Firebase Authentication (Anonymous Auth)
 ```
 
 ### Version Control
