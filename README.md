@@ -147,7 +147,7 @@ Moving away from traditional boring lecture-style education, we provide **fun an
 
 ## Game URL
 [Play Our Game!](https://follow-star-safe-driving.vercel.app/) <br>
-<img src="/img/game_QR.jpg" width="50px" height="50px" title="Game site QR" alt="Game site QR"></img><br/>
+<img src="/img/game_QR.jpg" width="150px" height="150px" title="Game site QR" alt="Game site QR"></img><br/>
 
 ## Demo Video
 [Watch Demo Video (YouTube)](https://youtu.be/bmu_o109K_8)
