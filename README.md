@@ -16,7 +16,7 @@
 - **환경경**: 교육자의 1:1 지도 하에 태블릿 사용 
 
 ## 게임 접속 주소
-[별따라 안전 운전을 플레이 해보세요!](https://follow-star-safe-driving.vercel.app/)
+[별따라 안전 운전을 플레이 해보세요!](https://follow-star-safe-driving.vercel.app/) <br>
 <img src="/img/game_QR.jpg" width="50px" height="50px" title="Game site QR" alt="Game site QR"></img><br/>
 
 ## 데모 영상
